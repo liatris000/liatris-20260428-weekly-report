@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>週次進捗レポート｜2026年4月第4週</title>
+<style>
+
+    :root {
+      --bg: #0d1117; --surface: #161b22; --surface2: #21262d;
+      --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff;
+      --accent2: #f78166; --border: #30363d; --code-bg: #1f2428;
+      --success: #3fb950; --warning: #d29922;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Yu Gothic', sans-serif;
+      background: var(--bg); color: var(--text);
+      line-height: 1.8; font-size: 16px;
+    }
+    .container { max-width: 860px; margin: 0 auto; padding: 40px 24px; }
+    .header {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 32px 40px; margin-bottom: 32px;
+      border-left: 4px solid var(--accent);
+    }
+    .header h1 { font-size: 28px; color: var(--accent); margin-bottom: 8px; }
+    .header .meta { color: var(--muted); font-size: 14px; }
+    .toc {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 8px; padding: 24px; margin-bottom: 32px;
+    }
+    .toc h2 { font-size: 16px; color: var(--muted); margin-bottom: 12px;
+               text-transform: uppercase; letter-spacing: 0.05em; }
+    .toc ul { list-style: none; padding-left: 0; }
+    .toc li { padding: 3px 0; }
+    .toc a { color: var(--accent); text-decoration: none; font-size: 15px; }
+    .toc a:hover { text-decoration: underline; }
+    .toc li.h3 { padding-left: 16px; font-size: 14px; }
+    section {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 8px; padding: 28px 32px; margin-bottom: 20px;
+    }
+    h2 { font-size: 20px; color: var(--text); padding-bottom: 8px;
+         border-bottom: 1px solid var(--border); margin-bottom: 16px; }
+    h3 { font-size: 16px; color: var(--accent); margin: 20px 0 10px; }
+    p { margin-bottom: 12px; }
+    ul, ol { padding-left: 24px; margin-bottom: 12px; }
+    li { margin-bottom: 4px; }
+    li.task { list-style: none; margin-left: -24px; padding-left: 0; }
+    li.task input { margin-right: 8px; }
+    code {
+      background: var(--code-bg); color: var(--accent2);
+      padding: 2px 6px; border-radius: 4px; font-size: 0.9em;
+      font-family: 'SF Mono', Consolas, monospace;
+    }
+    pre {
+      background: var(--code-bg); border: 1px solid var(--border);
+      border-radius: 6px; padding: 16px; overflow-x: auto;
+      margin-bottom: 12px;
+    }
+    pre code { background: none; padding: 0; color: var(--text); }
+    table {
+      width: 100%; border-collapse: collapse; margin-bottom: 12px;
+      font-size: 15px;
+    }
+    th, td { padding: 10px 14px; border: 1px solid var(--border); text-align: left; }
+    th { background: var(--surface2); color: var(--muted);
+         text-transform: uppercase; font-size: 12px; letter-spacing: 0.05em; }
+    blockquote {
+      border-left: 3px solid var(--accent); padding-left: 16px;
+      color: var(--muted); margin: 12px 0;
+    }
+    .badge-done { color: var(--success); font-weight: bold; }
+    .badge-wip  { color: var(--warning); font-weight: bold; }
+    .actions {
+      position: fixed; bottom: 24px; right: 24px;
+      display: flex; gap: 10px; flex-direction: column;
+    }
+    .btn {
+      padding: 12px 20px; border-radius: 8px; border: none;
+      cursor: pointer; font-size: 14px; font-weight: 600;
+      display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .btn-print { background: var(--accent); color: white; }
+    .btn-theme { background: var(--surface); color: var(--text);
+                 border: 1px solid var(--border); }
+    .footer { text-align: center; padding: 24px; color: var(--muted); font-size: 13px; }
+    @media print {
+      .actions { display: none; }
+      body { background: white; color: #333; }
+      section { box-shadow: none; border: 1px solid #ddd; break-inside: avoid; }
+      a { color: #333; }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>週次進捗レポート｜2026年4月第4週</h1>
+    <div class="meta">Generated: 2026-04-28 02:54 &nbsp;|&nbsp; md_to_report.py</div>
+  </div>
+<div class="toc"><h2>目次</h2><ul><li><a href="#今週のサマリー">今週のサマリー</a></li><li><a href="#kpiダッシュボード">KPIダッシュボード</a></li><li><a href="#完了タスク">完了タスク</a></li><li><a href="#進行中タスク">進行中タスク</a></li><li><a href="#来週の予定">来週の予定</a></li><li class="h3"><a href="#最優先">最優先</a></li><li class="h3"><a href="#通常作業">通常作業</a></li><li><a href="#課題ブロッカー">課題・ブロッカー</a></li><li><a href="#メモ所感">メモ・所感</a></li></ul></div>
+<h1 style="font-size:32px;margin-bottom:24px">週次進捗レポート｜2026年4月第4週</h1>
+<section id="今週のサマリー">
+<h2>今週のサマリー</h2>
+<p>先週から引き続き、新規クライアント向けデータ分析基盤の構築を中心に進めました。</p>
+<p>主要マイルストーンのうち2件を完了し、残り1件は来週に持ち越しです。</p>
+<p>全体進捗: <strong>78%</strong>（先週比 +12%）</p>
+</section>
+<section id="kpiダッシュボード">
+<h2>KPIダッシュボード</h2>
+<table><tr><th>指標</th><th>目標</th><th>実績</th><th>達成率</th></tr><tr><td>リード獲得数</td><td>50件</td><td>62件</td><td>124%</td></tr><tr><td>商談化率</td><td>40%</td><td>38%</td><td>95%</td></tr><tr><td>成約数</td><td>5件</td><td>4件</td><td>80%</td></tr><tr><td>顧客満足度スコア</td><td>4.2</td><td>4.5</td><td>107%</td></tr></table>
+</section>
+<section id="完了タスク">
+<h2>完了タスク</h2>
+<ul><li class="task"><input type="checkbox" checked disabled>クライアントAの分析レポート（初稿）提出</li></ul>
+<ul><li class="task"><input type="checkbox" checked disabled>GA4連携ダッシュボードのβ版リリース</li></ul>
+<ul><li class="task"><input type="checkbox" checked disabled>社内AIツール勉強会（参加者23名）</li></ul>
+<ul><li class="task"><input type="checkbox" checked disabled>月次振り返りMTG資料作成</li></ul>
+</section>
+<section id="進行中タスク">
+<h2>進行中タスク</h2>
+<ul><li class="task"><input type="checkbox"  disabled>クライアントBのデータ整備（60%完了）</li></ul>
+<ul><li class="task"><input type="checkbox"  disabled>自動レポート生成スクリプトのテスト</li></ul>
+<ul><li class="task"><input type="checkbox"  disabled>採用面接（候補者3名、来週まで）</li></ul>
+</section>
+<section id="来週の予定">
+<h2>来週の予定</h2>
+<h3 id="最優先">最優先</h3>
+<ol>
+<li>クライアントBのデータ整備を完了し、初回分析を実施</li>
+<li>自動レポート生成スクリプトを本番環境へデプロイ</li>
+</ol>
+<h3 id="通常作業">通常作業</h3>
+<ul>
+<li>週次MTG（月・水・金）</li>
+<li>Zenn記事の公開（1本）</li>
+<li>新機能検証：Claude Code Hooks</li>
+</ul>
+</section>
+<section id="課題ブロッカー">
+<h2>課題・ブロッカー</h2>
+<blockquote>クライアントBから提供されたCSVのエンコードが混在しており、</blockquote>
+<blockquote>前処理に予想より時間がかかっています。来週前半に解消予定。</blockquote>
+</section>
+<section id="メモ所感">
+<h2>メモ・所感</h2>
+<p>Claude Codeでの業務自動化を試み始めて1ヶ月。</p>
+<p>週次レポートの下書き生成とデータ整形作業を合わせると、</p>
+<p>週あたり約<strong>3時間</strong>の削減を体感しています。</p>
+<p>来週はこの <code>md_to_report.py</code> を社内Slackボットと連携させて、</p>
+<p>定時に自動でHTMLレポートを生成・共有する仕組みを試す予定です。</p>
+<hr style="border:none;border-top:1px solid var(--border);margin:16px 0">
+<p>Generated by <a href="https://github.com/liatris000/liatris-20260428-weekly-report">md_to_report.py</a></p>
+</section>
+</div>
+<div class="actions">
+  <button class="btn btn-print" onclick="window.print()">&#128424;&#65039; PDF&#20445;&#23384;</button>
+  <button class="btn btn-theme" onclick="toggleTheme()">&#127763; &#12486;&#12540;&#12510;&#20999;&#26367;</button>
+</div>
+<div class="footer">Generated by md_to_report.py</div>
+<script>
+
+function toggleTheme() {
+  const html = document.documentElement;
+  const next = html.dataset.theme === 'dark' ? 'light' : 'dark';
+  html.dataset.theme = next;
+  const root = document.querySelector(':root');
+  if (next === 'light') {
+    root.style.setProperty('--bg', '#f6f8fa');
+    root.style.setProperty('--surface', '#ffffff');
+    root.style.setProperty('--surface2', '#f0f3f6');
+    root.style.setProperty('--text', '#1f2328');
+    root.style.setProperty('--muted', '#57606a');
+    root.style.setProperty('--accent', '#0969da');
+    root.style.setProperty('--accent2', '#cf222e');
+    root.style.setProperty('--border', '#d1d9e0');
+    root.style.setProperty('--code-bg', '#eff1f3');
+  } else {
+    root.style.setProperty('--bg', '#0d1117');
+    root.style.setProperty('--surface', '#161b22');
+    root.style.setProperty('--surface2', '#21262d');
+    root.style.setProperty('--text', '#e6edf3');
+    root.style.setProperty('--muted', '#8b949e');
+    root.style.setProperty('--accent', '#58a6ff');
+    root.style.setProperty('--accent2', '#f78166');
+    root.style.setProperty('--border', '#30363d');
+    root.style.setProperty('--code-bg', '#1f2428');
+  }
+}
+</script>
+</body>
+</html>
